@@ -8,6 +8,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+    "flake8-pyproject>=1.2.3",
     "flake8>=7.1.1",
     "isort>=5.13.2",
     "mypy>=1.13.0",
@@ -75,8 +76,11 @@ docstring-code-format = false
 docstring-code-line-length = "dynamic"
 
 [tool.pytest.ini_options]
-minversion = "6.0"
+minversion = "7.0"
 addopts = "-ra -q -p no:warnings"
 testpaths = [
     "tests"
+]
+pythonpath = [
+    "src"
 ]
