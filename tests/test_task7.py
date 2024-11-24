@@ -22,4 +22,3 @@ def test_hermione() -> None:
     assert p2.last_name == "Granger"
     assert p2.full_name() == "Granger Hermione"
     assert p2.is_adult() is False
-    print("Good")
