@@ -4,8 +4,7 @@ repos:
     - id: mypy
       name: mypy
       entry: uv run mypy
-      language: python
-      additional_dependencies: ["mypy>=1.13"]
+      language: system
       types_or: [python, pyi]
       # use require_serial so that script
       # is only called once per commit
