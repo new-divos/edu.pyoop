@@ -47,7 +47,7 @@ def test_numbers4() -> None:
 
 
 def test_numbers5() -> None:
-    nums = Numbers()
+    nums: Numbers = Numbers()
     assert nums.get_positive() == []
     assert nums.get_negative() == []
     assert nums.get_zeroes() == []
